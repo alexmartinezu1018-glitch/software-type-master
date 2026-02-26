@@ -3,7 +3,7 @@ car_list = ["ferrari", "bugatti", "lamborghini", "mclaren", "pagani", "porsche",
 random.shuffle(car_list)
 rounds = 15
 right = 0
-right = 0
+wrong = 0
 
 print("super car game")
 for number in range(rounds):
@@ -16,4 +16,8 @@ for number in range(rounds):
     else:
         print("incorrect")
         wrong += 1
-        
+
+print("you finish")
+print("Wrong answers:", wrong)
+score = (right / rounds) * 100
+print("score:", score, "%")
